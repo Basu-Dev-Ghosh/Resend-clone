@@ -57,7 +57,9 @@ export default function Navbar() {
           <button className="text-[rgb(120,125,129)]  hover:text-slate-50 transition ease-in-out duration-150 font-bold">
             Sign in
           </button>
-          <GetStartedButton className="ml-4">Get Started</GetStartedButton>
+          <GetStartedButton className="ml-4 bg-white">
+            Get Started
+          </GetStartedButton>
         </div>
       </div>
       <MobileNav />

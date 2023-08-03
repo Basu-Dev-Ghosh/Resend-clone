@@ -22,7 +22,7 @@ export default function Home() {
             and deliver transactional emails at scale.
           </p>
           <div className="flex flex-col md:flex-row mx-4 md:mx-0">
-            <GetStartedButton className="h-[46px] px-9">
+            <GetStartedButton className="h-[46px] px-9  bg-white">
               Get Started
             </GetStartedButton>
             <GetStartedButton className="bg-transparent mt-4 md:mt-0 text-center text-white hover:text-slate-600 md:ml-4 h-[46px] px-9 text-lg">
