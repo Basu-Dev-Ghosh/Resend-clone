@@ -25,7 +25,7 @@ export default function TestCheck() {
   }, []);
   return (
     <div className={styles.testCheck}>
-      <div className="bg-gradient-to-b from-[#303030e9] to-[#000] py-1 flex rounded-lg ">
+      <div className="bg-gradient-to-b from-[#303030e9] to-[#000] py-1 flex rounded-lg w-[95%] md:w-[75%]">
         <Dropdown />
         <button
           className="flex justify-center items-center my-1 mx-3 bg-black px-3  rounded-lg text-xs-center"

@@ -12,7 +12,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 function Option() {
   return (
     <>
-      <span className="bg-[#1B3129] text-green-400 px-2 py-1 rounded-md mr-2">
+      <span className="bg-[#1B3129] text-green-400 px-2 py-1 rounded-md mr-2 hidden md:inline">
         Delivered
       </span>
       <span>delivered@resend.dev</span>
