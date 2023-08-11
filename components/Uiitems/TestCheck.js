@@ -35,7 +35,7 @@ export default function TestCheck() {
           Send
         </button>
       </div>
-      <div className="mt-6 flex flex-col h-[150px] overflow-hidden">
+      <div className="mt-6 flex flex-col h-[150px] overflow-hidden mx-auto">
         <AnimatePresence>
           {[...item1].reverse().map((item, index) => {
             return (
@@ -50,7 +50,7 @@ export default function TestCheck() {
                   opacity: { delay: 0.1 },
                 }}
                 exit={{ height: 0, opacity: 0, scale: 0 }}
-                className="text-xs my-3 text-slate-500 relative"
+                className="text-xs mt-3 text-slate-500 relative"
               >
                 {'HTTP 200:"id": "544c5aee-bcc2-4f92-89fa-2892152eace0"'}
               </motion.p>
