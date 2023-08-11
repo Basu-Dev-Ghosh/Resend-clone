@@ -180,8 +180,8 @@ export default function Home() {
           </div>
           <p className="text-[#93989D] w-[80%] md:w-full text-center md:text-left mx-auto md:mx-0">
             We are a team of engineers who love building tools for other
-            engineers. Our goal is to create the email platform we've always
-            wished we had — one that just works.
+            engineers Our goal is to create the email platform weve always
+            wished we had one that just works.
           </p>
         </div>
         <div className="flex mt-6">
