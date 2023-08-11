@@ -50,7 +50,7 @@ export default function TestCheck() {
                   opacity: { delay: 0.1 },
                 }}
                 exit={{ height: 0, opacity: 0, scale: 0 }}
-                className="text-xs mt-3 text-slate-500 relative"
+                className="md:text-xs text-[.45rem] text-center mt-3 text-slate-500 relative"
               >
                 {'HTTP 200:"id": "544c5aee-bcc2-4f92-89fa-2892152eace0"'}
               </motion.p>
