@@ -52,8 +52,7 @@ export default function TestCheck() {
                 exit={{ height: 0, opacity: 0, scale: 0 }}
                 className="text-xs my-3 text-slate-500 relative"
               >
-                HTTP 200: &#10100;"id": "544c5aee-bcc2-4f92-89fa-2892152eace0"
-                &#10101;
+                {'HTTP 200:"id": "544c5aee-bcc2-4f92-89fa-2892152eace0"'}
               </motion.p>
             );
           })}
