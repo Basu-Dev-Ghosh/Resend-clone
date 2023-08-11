@@ -5,7 +5,7 @@ export default function TechLabel({
   setLanguage,
 }) {
   return (
-    <>
+    <div className="mt-2 mx-2 md:mt-0">
       <input
         key={name}
         className={`peer/${name} hidden`}
@@ -27,6 +27,6 @@ export default function TechLabel({
         </div>
         <p className="mt-2 text-sm ">{label}</p>
       </label>
-    </>
+    </div>
   );
 }

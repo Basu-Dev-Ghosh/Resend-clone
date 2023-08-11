@@ -243,21 +243,15 @@ export default function CodeViewer() {
   const [language, setLanguage] = useState("nodejs");
   const [copy, setCopy] = useState(false);
   return (
-    <div className="mt-8">
-      <div className="max-w-5xl flex mx-auto w-full text-center justify-evenly items-center flex-wrap">
+    <div className="mt-16">
+      <div className="max-w-[400px] md:max-w-5xl p-8 flex mx-auto  text-center justify-evenly items-center flex-wrap">
         {techItems.map((item, index) => {
           return (
             <TechLabel key={index} item={item} setLanguage={setLanguage} />
           );
         })}
       </div>
-      <div
-        className="mx-auto max-w-5xl mt-6 min-w-[25rem] bg-[#00000] rounded-md border border-gray-800 border-[linear-gradient(
-        to bottom, 
-        red, 
-        rgba(0, 0, 0, 0)
-      ) 1 100%;] p-4"
-      >
+      <div className="max-w-[480px] mt-6 w-[80vw] md:max-w-5xl min-w-[10rem] bg-[#00000] rounded-md border border-gray-800 p-4 mx-auto ">
         <div className="flex justify-between w-full items-center">
           <p className="flex justify-center items-center p-1 cursor-pointer border border-gray-700 rounded-md hover:text-white text-[#92979C] transition-all duration-300 ease-in-out">
             <RiJavascriptLine className="mr-2 text-orange-300" />
@@ -290,6 +284,7 @@ export default function CodeViewer() {
           customStyle={{
             background: "#00000",
             border: 0,
+            width: "80%",
           }}
         >
           {codeStrings[language].code}

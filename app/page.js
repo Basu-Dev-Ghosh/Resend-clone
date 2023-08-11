@@ -1,6 +1,6 @@
 import styles from "styles/ui.module.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import GetStartedButton from "@/components/Ui/GetStartedButton";
+import GetStartedButton from "@/components/Uiitems/GetStartedButton";
 import Image from "next/image";
 import {
   image1,
@@ -17,7 +17,9 @@ import {
   image12,
   inbox,
 } from "public/images/index.js";
-import CodeViewer from "@/components/Ui/CodeViewer";
+import CodeViewer from "@/components/Uiitems/CodeViewer";
+import TestCheck from "@/components/Uiitems/TestCheck";
+import TestCard from "@/components/Uiitems/TestCard";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
@@ -170,6 +172,25 @@ export default function Home() {
           </p>
         </div>
         <CodeViewer />
+      </section>
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20">
+        <div className="w-full md:w-[70%]">
+          <div className="text-5xl text-center md:text-left  md:text-6xl text-[#EDEDED] my-4 flex flex-col">
+            <span>First-class</span> <span>developer experience</span>
+          </div>
+          <p className="text-[#93989D] w-[80%] md:w-full text-center md:text-left mx-auto md:mx-0">
+            We are a team of engineers who love building tools for other
+            engineers. Our goal is to create the email platform we've always
+            wished we had — one that just works.
+          </p>
+        </div>
+        <div className="flex mt-6">
+          <div className="flex flex-col mx-auto md:mx-0">
+            <TestCheck />
+            <TestCard />
+          </div>
+          <div></div>
+        </div>
       </section>
     </main>
   );

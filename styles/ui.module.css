@@ -64,3 +64,23 @@
    .color_border_button:active {
     --border-width: 2px;
    }
+
+
+.testCheck{
+    width: 520px;
+    height: 300px;
+    border-radius: 50px; /*1*/
+    border: 1px solid transparent; /*2*/
+    border-bottom: 0;
+    border-image: linear-gradient(-120deg, rgb(200, 200, 200), rgb(0, 0, 0)) 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (width <= 600px) {
+    .testCheck{
+        width:90vw;
+        margin-inline: auto;
+    }
+}
