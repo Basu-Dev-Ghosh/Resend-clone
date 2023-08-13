@@ -54,9 +54,9 @@ export default function TestCheck() {
     };
   }, []);
   let icons = [
-    <CiWarning className="text-red-400 text-lg" />,
-    <TiTick className="text-green-500 text-lg" />,
-    <PiWarningCircleBold className="text-[#be8f38] text-lg" />,
+    <CiWarning className="text-red-400 text-lg" key={1} />,
+    <TiTick className="text-green-500 text-lg" key={2} />,
+    <PiWarningCircleBold className="text-[#be8f38] text-lg" key={3} />,
   ];
   let text = ["Bounced", "Success", "Complained"];
   let bg = [
