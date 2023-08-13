@@ -25,32 +25,32 @@ export default function TestCheck() {
   }, []);
   return (
     <div className={styles.testCheck}>
-      <div className="bg-gradient-to-b from-[#303030e9] to-[#000] py-1 flex rounded-lg w-[95%] md:w-[75%]">
+      <div className="bg-gradient-to-b flex justify-between md:justify-center items-center from-[#303030e9] to-[#000] py-1  rounded-lg w-full md:w-[75%] mx-auto text-center">
         <Dropdown />
         <button
-          className="flex justify-center items-center my-1 mx-3 bg-black px-3  rounded-lg text-xs-center"
+          className="flex justify-center items-center my-1 mr-10 bg-black px-4 py-2 rounded-2xl text-[.7rem] border border-gray-700"
           onClick={AddItem}
         >
           <GiWineGlass className="mr-2" />
           Send
         </button>
       </div>
-      <div className="mt-6 flex flex-col h-[150px] overflow-hidden mx-auto">
+      <div className="mt-6 flex flex-col h-[100px] overflow-hidden mx-auto">
         <AnimatePresence>
           {[...item1].reverse().map((item, index) => {
             return (
               <motion.p
                 layout
                 key={item}
-                initial={{ height: 0, opacity: 0, scale: 0 }}
-                animate={{ scale: 1, height: 1, opacity: 1 }}
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 1, opacity: 1 }}
                 transition={{
                   type: "spring",
                   bounce: 0.3,
                   opacity: { delay: 0.1 },
                 }}
-                exit={{ height: 0, opacity: 0, scale: 0 }}
-                className="md:text-xs text-[.45rem] text-center mt-3 text-slate-500 relative"
+                exit={{ height: 0, opacity: 0 }}
+                className=" text-[.45rem] md:text-[.6rem] text-center my-3 text-[#7c7c7e] relative"
               >
                 {'HTTP 200:"id": "544c5aee-bcc2-4f92-89fa-2892152eace0"'}
               </motion.p>

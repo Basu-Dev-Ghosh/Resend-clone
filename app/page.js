@@ -19,7 +19,9 @@ import {
 } from "public/images/index.js";
 import CodeViewer from "@/components/Uiitems/CodeViewer";
 import TestCheck from "@/components/Uiitems/TestCheck";
+import TestCheck2 from "@/components/Uiitems/TestCheck2";
 import TestCard from "@/components/Uiitems/TestCard";
+import TestCard2 from "@/components/Uiitems/TestCard2";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
@@ -184,12 +186,15 @@ export default function Home() {
             wished we had one that just works.
           </p>
         </div>
-        <div className="flex mt-6">
-          <div className="flex flex-col mx-auto md:mx-0">
+        <div className="flex mt-6 flex-col md:flex-row">
+          <div className="flex flex-col mx-auto md:mx-0  md:w-full">
             <TestCheck />
             <TestCard />
           </div>
-          <div></div>
+          <div className="flex flex-col mx-auto md:mx-0 mt-10 md:mt-0 md:w-full">
+            <TestCheck2 />
+            <TestCard2 />
+          </div>
         </div>
       </section>
     </main>

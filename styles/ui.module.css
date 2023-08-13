@@ -67,19 +67,35 @@
 
 
 .testCheck{
-    width: 520px;
+    width: 550px;
     height: 300px;
     border-radius: 50px; /*1*/
     border: 1px solid transparent; /*2*/
     border-bottom: 0;
-    border-image: linear-gradient(-120deg, rgb(200, 200, 200), rgb(0, 0, 0)) 1;
+    border-image: linear-gradient(-120deg, rgba(109, 109, 109, 0.506), rgb(0, 0, 0)) 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+.testCheck2{
+    width: 550px;
+    height: 300px;
+    border-radius: 50px; /*1*/
+    border: 1px solid transparent; /*2*/
+    border-bottom: 0;
+    border-image: linear-gradient(120deg, rgba(80, 80, 80, 0.506), rgb(0, 0, 0)) 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    overflow: hidden;
 }
 @media (width <= 600px) {
     .testCheck{
+        width:90vw;
+        margin-inline: auto;
+    }
+    .testCheck2{
         width:90vw;
         margin-inline: auto;
     }
