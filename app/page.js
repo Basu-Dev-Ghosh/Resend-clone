@@ -350,8 +350,7 @@ export default function Home() {
         </h3>
         <p className="text-center w-[60%] text-sm md:text-base mx-auto text-[#90959A]">
           Resend is driving remarkable developer experiences that enable success
-          stories, empower businesses, and fuel growth across industries and
-          individuals.
+          stories.
         </p>
 
         <Carousal />
