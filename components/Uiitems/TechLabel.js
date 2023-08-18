@@ -7,7 +7,6 @@ export default function TechLabel({
   return (
     <div className="mt-2 mx-2 md:mt-0">
       <input
-        key={name}
         className={`peer/${name} hidden`}
         type="radio"
         id={name}

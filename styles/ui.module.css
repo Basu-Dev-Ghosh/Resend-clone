@@ -100,3 +100,44 @@
         margin-inline: auto;
     }
 }
+
+
+
+.animated_button{
+    --black: #000000;
+    --ch-black: #000000;
+    --eer-black: #1b1b1b;
+    --night-rider: #2e2e2e;
+    --white: #ffffff;
+    --af-white: #21C7A3;
+    --ch-white: #21C7A3;
+    border-radius: 4px;
+    height: 65px;
+    padding: 0px 5px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .4s;
+    background: var(--ch-black);
+}
+
+.animated_button:before, .animated_button:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 6px;
+    background: linear-gradient(45deg, 
+    var(--ch-black), var(--eer-black),
+    var(--night-rider), var(--ch-white), var(--night-rider), 
+      var(--eer-black), var(--ch-black),var(--ch-black));
+    background-size: 200%;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    z-index: -1;
+  }
+ 
+  .animated_button:after {
+    filter: blur(500px);
+  }

@@ -247,7 +247,7 @@ export default function CodeViewer() {
       <div className="max-w-[400px] md:max-w-5xl p-8 flex mx-auto  text-center justify-evenly items-center flex-wrap">
         {techItems.map((item, index) => {
           return (
-            <TechLabel key={index} item={item} setLanguage={setLanguage} />
+            <TechLabel key={item.name} item={item} setLanguage={setLanguage} />
           );
         })}
       </div>
