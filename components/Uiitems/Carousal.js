@@ -1,69 +1,57 @@
 "use client"
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import CarousalCard from './CarousalCard';
 
-export default function Carousal(){
-    return <Carousel
-  additionalTransfrom={0}
-  arrows={false}
-  autoPlay
-  autoPlaySpeed={10}
-  centerMode={false}
-  className="my-14"
-  containerClass="container-with-dots"
-  customTransition="all 10s linear"
-  dotListClass=""
-  draggable
-  focusOnSelect={false}
-  infinite
-  itemClass=""
-  keyBoardControl={false}
-  minimumTouchDrag={80}
-  pauseOnHover
-  renderArrowsWhenDisabled={false}
-  renderButtonGroupOutside={false}
-  renderDotsOutside={false}
-  responsive={{
-    desktop: {
-      breakpoint: {
-        max: 3000,
-        min: 1024
-      },
-      items: 3,
-      partialVisibilityGutter: 40
+var settings = {
+  className:"my-20 w-[386px] md:w-full",
+  dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      pauseOnHover: true,
+      autoplaySpeed: 2000,
+      cssEase: "linear",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
     },
-    mobile: {
-      breakpoint: {
-        max: 464,
-        min: 0
-      },
-      items: 1,
-      partialVisibilityGutter: 30
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        infinite: true,
+      }
     },
-    tablet: {
-      breakpoint: {
-        max: 1024,
-        min: 464
-      },
-      items: 2,
-      partialVisibilityGutter: 30
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+
+      }
     }
-  }}
-  rewind={false}
-  rewindWithAnimation={false}
-  rtl={false}
-  shouldResetAutoplay
-  showDots={false}
-  sliderClass=""
-  slidesToSlide={2}
-  swipeable
-  transitionDuration={1000}
->
+  ]
+};
+
+export default function Carousal(){
+    return <Slider {...settings}>
   <CarousalCard/>
   <CarousalCard/>
   <CarousalCard/>
   <CarousalCard/>
   <CarousalCard/>
-</Carousel>
+</Slider>
 }

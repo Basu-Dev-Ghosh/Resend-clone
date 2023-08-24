@@ -344,7 +344,7 @@ export default function Home() {
 
         <ButtonGroup />
       </section>
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-24 ">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-24 overflow-hidden">
         <h3 className="text-5xl text-center w-[60%] mx-auto text-[#EDEDED] my-6">
           Beyond expectations
         </h3>
