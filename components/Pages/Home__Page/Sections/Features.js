@@ -4,7 +4,7 @@ const ButtonGroup=dynamic(()=>import("@/components/Pages/Home__Page/Components/B
 })
 export default function Features() {
   return (
-    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-24 p-8">
+    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-24 md:p-8">
       <video
         autoPlay
         loop

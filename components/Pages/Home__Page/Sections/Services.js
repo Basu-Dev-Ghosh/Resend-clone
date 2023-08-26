@@ -5,7 +5,7 @@ const TestCard=dynamic(()=>import("@/components/Pages/Home__Page/Components/Test
 })
 export default function Services() {
   return (
-    <section className="flex-col lg:flex-row w-10/12 justify-start items-start my-20 p-4">
+    <section className="flex-col lg:flex-row w-10/12 justify-start items-start my-20 md:p-8 p-3">
       <div className="text-5xl text-left lg:text-6xl text-[#EDEDED] my-4 flex flex-col">
         <span>Reach humans,</span>{" "}
         <span className="text-white/40">not spam folders</span>

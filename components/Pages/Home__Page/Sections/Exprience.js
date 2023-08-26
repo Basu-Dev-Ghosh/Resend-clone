@@ -13,7 +13,7 @@ import { GiAcid } from "react-icons/gi";
 import { BsCircleSquare } from "react-icons/bs";
 export default function Exprience() {
   return (
-    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 p-8">
+    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 md:p-8">
       <div className="w-full">
         <div className="text-5xl text-center md:text-left  md:text-6xl text-[#EDEDED] my-4 flex flex-col">
           <span>First-class</span> <span>developer experience</span>

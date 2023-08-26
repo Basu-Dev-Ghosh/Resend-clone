@@ -8,7 +8,7 @@ const DocSection=dynamic(()=>import("@/components/Pages/Home__Page/Components/Do
 
 export default function Emails() {
   return (
-    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 p-8">
+    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 md:p-8">
       <video
         autoPlay
         loop

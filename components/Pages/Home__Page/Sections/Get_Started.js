@@ -4,7 +4,7 @@ const GetStartedButton=dynamic(()=>import("@/components/Pages/Home__Page/Compone
   })
 export default function Get_Started() {
   return (
-    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-10 p-8">
+    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-10 md:p-8">
       <h3 className="text-5xl w-[80%] mx-auto text-[#EDEDED] my-4 text-center">
         Email reimagined. Available today.
       </h3>

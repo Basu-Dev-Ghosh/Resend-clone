@@ -7,7 +7,7 @@ const CodeViewer=dynamic(()=>import("@/components/Pages/Home__Page/Components/Co
 
 export default function Codes() {
   return (
-    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center lg:my-52 my-10 p-8">
+    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center lg:my-52 my-10 md:p-8">
       <div className="flex-col mx-auto w-full text-center justify-center items-center">
         <Image
           src={inbox}

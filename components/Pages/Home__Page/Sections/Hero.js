@@ -8,7 +8,7 @@ const GetStartedButton=dynamic(()=>import("@/components/Pages/Home__Page/Compone
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <section className="flex flex-col-reverse md:flex-row max-w-7xl items-center md:items-start lg:items-center p-8 md:mt-10 lg:mt-0">
+    <section className="flex flex-col-reverse md:flex-row max-w-7xl items-center md:items-start lg:items-center md:p-8 md:mt-10 lg:mt-0">
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

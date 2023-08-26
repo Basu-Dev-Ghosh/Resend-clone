@@ -2,7 +2,7 @@ import Image from "next/image";
 import { vercel, vercel_owner } from "public/images/index.js";
 export default function Quote() {
   return (
-    <section className="py-10 flex-col max-w-7xl w-[90%] p-8 justify-center items-center my-20 bg-[rgb(1,0,14)] bg-[linear-gradient(292deg, rgba(1,0,14,1) 0%, rgba(3,13,22,1) 81%, rgba(3,16,24,1) 100%)]">
+    <section className="py-10 flex-col max-w-7xl w-[90%] md:p-8 justify-center items-center my-20 bg-[rgb(1,0,14)] bg-[linear-gradient(292deg, rgba(1,0,14,1) 0%, rgba(3,13,22,1) 81%, rgba(3,16,24,1) 100%)]">
       <div className="mx-auto w-[60px] h-[60px] rounded-full bg-[rgb(37,37,37)]  bg-[linear-gradient(126deg, rgba(1,0,14,1) 0%, rgba(58,58,58,1) 44%, rgba(0,0,1,1) 100%, rgba(3,16,24,1) 100%)] flex justify-center items-center">
         <Image src={vercel} width={30} height={30} alt="image" />
       </div>

@@ -16,7 +16,7 @@ import {
 
 export default function Customers() {
   return (
-    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-6 p-8">
+    <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-6 md:p-8">
       <p className="text-[#93989D] text-lg text-wrap mx-auto text-center w-96 mb-16">
         Companies of all sizes trust Resend to deliver their most important
         emails.
