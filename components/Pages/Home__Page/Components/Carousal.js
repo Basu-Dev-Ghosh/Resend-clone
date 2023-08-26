@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import CarousalCard from './CarousalCard';
 
 var settings = {
-  className:"my-20 w-[270px] md:w-[370px] md:w-[760px] lg:w-full",
+  className:"my-20 w-[320px] md:w-[370px] md:w-[760px] lg:w-full",
   dots: true,
       infinite: true,
       slidesToShow: 3,
