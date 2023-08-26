@@ -10,9 +10,9 @@ export default function ButtonGroup() {
   const [image, setImage] = useState(1);
   return (
     <>
-      <div className="my-10 flex flex-col md:flex-row items-center justify-between w-full p-6 md:p-0">
+      <div className="my-10 flex flex-col lg:flex-row items-center justify-between w-full p-6 lg:p-0">
         <button
-          className={`${styles.animated_button} ${image===1 ? 'before:animate-border after:animate-border' :''} flex justify-start items-center my-4 md:my-0 w-full md:w-[300px]`}
+          className={`${styles.animated_button} ${image===1 ? 'before:animate-border after:animate-border' :''} flex justify-start items-center my-4 lg:my-0 w-full lg:w-[300px]`}
           onClick={() => setImage(1)}
         >
           <span className="h-[30px] px-2 mx-2 rounded-lg border border-gray-600 flex justify-center items-center">
@@ -21,7 +21,7 @@ export default function ButtonGroup() {
           Intuitive analytics
         </button>
         <button
-          className={`${styles.animated_button} ${image===2 ? 'before:animate-border after:animate-border' :''} flex justify-start items-center my-4 md:my-0 w-full md:w-[300px]`}
+          className={`${styles.animated_button} ${image===2 ? 'before:animate-border after:animate-border' :''} flex justify-start items-center my-4 lg:my-0 w-full lg:w-[300px]`}
           onClick={() => setImage(2)}
         >
           <span className="h-[30px] px-2 mx-2 rounded-lg border border-gray-600 flex justify-center items-center">
@@ -30,7 +30,7 @@ export default function ButtonGroup() {
           Full Visibility
         </button>
         <button
-          className={`${styles.animated_button} ${image===3 ? 'before:animate-border after:animate-border' :''} flex justify-start items-center mt-4 md:my-0 mb-0 w-full md:w-[300px]`}
+          className={`${styles.animated_button} ${image===3 ? 'before:animate-border after:animate-border' :''} flex justify-start items-center mt-4 lg:my-0 mb-0 w-full lg:w-[300px]`}
           onClick={() => setImage(3)}
         >
           <span className="h-[30px] px-2 mx-2 rounded-lg border border-gray-600 flex justify-center items-center">

@@ -32,8 +32,8 @@ import Carousal from "@/components/Uiitems/Carousal";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <section className="flex flex-col-reverse lg:flex-row max-w-7xl items-center ">
-        <div className="flex-col text-center md:text-left justify-center items-center md:-mt-6">
+      <section className="flex flex-col-reverse md:flex-row max-w-7xl items-center md:items-start lg:items-center p-8 md:mt-10 lg:mt-0">
+        <div className="flex-col text-center md:text-left justify-center  items-center md:w-[50%] lg:w-auto">
           <div className="w-full text-center mx-auto flex justify-center md:justify-start md:w-auto">
             <button className={`${styles.color_border_button} text-center`}>
               Resend raises $3M seed round
@@ -62,13 +62,13 @@ export default function Home() {
           loop
           muted
           playsInline
-          className=" md:w-[640px] md:h-[640px] w-[200px] h-[200px] object-cover md:ml-10"
+          className="lg:w-[640px] lg:h-[640px] w-[200px] h-[200px] md:w-[340px] md:h-[340px] object-cover md:ml-10"
         >
           <source src="/cube.mp4" />
         </video>
       </section>
       <hr className="my-10 md:mt-0" />
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-10">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-6 p-8">
         <p className="text-[#93989D] text-lg text-wrap mx-auto text-center w-96 mb-16">
           Companies of all sizes trust Resend to deliver their most important
           emails.
@@ -76,93 +76,93 @@ export default function Home() {
         <div className="flex flex-wrap  items-center justify-around mx-auto  w-[80%] ">
           <Image
             src={image7}
-            className="m-4 md:m-0"
+            className="m-4 lg:m-0"
             width={100}
             height={100}
             alt="image1"
           />
           <Image
             src={image8}
-            className="m-4 md:m-0"
+            className="m-4 lg:m-0"
             width={100}
             height={100}
             alt="image1"
           />
           <Image
             src={image9}
-            className="m-4 md:m-0"
+            className="m-4 lg:m-0"
             width={100}
             height={100}
             alt="image1"
           />
           <Image
             src={image10}
-            className="m-4 md:m-0"
+            className="m-4 lg:m-0"
             width={100}
             height={100}
             alt="image1"
           />
           <Image
             src={image11}
-            className="m-4 md:m-0"
+            className="m-4 lg:m-0"
             width={100}
             height={100}
             alt="image1"
           />
           <Image
             src={image12}
-            className="m-4 md:m-0"
+            className="m-4 lg:m-0"
             width={100}
             height={100}
             alt="image1"
           />
         </div>
-        <div className="flex-wrap items-center justify-around mt-14 mx-auto w-full hidden md:flex">
+        <div className="flex-wrap items-center justify-around mt-14 mx-auto w-full hidden lg:flex">
           <Image
             src={image1}
             className="mx-8"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="image1"
           />
           <Image
             src={image2}
             className="mx-8"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="image1"
           />
           <Image
             src={image3}
             className="mx-8"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="image1"
           />
           <Image
             src={image4}
             className="mx-8"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="image1"
           />
           <Image
             src={image5}
             className="mx-8"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="image1"
           />
           <Image
             src={image6}
             className="mx-6"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="image1"
           />
         </div>
       </section>
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center md:my-52 my-28">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center lg:my-52 my-10 p-8">
         <div className="flex-col mx-auto w-full text-center justify-center items-center">
           <Image
             src={inbox}
@@ -182,8 +182,8 @@ export default function Home() {
         </div>
         <CodeViewer />
       </section>
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20">
-        <div className="w-full md:w-[70%]">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 p-8">
+        <div className="w-full">
           <div className="text-5xl text-center md:text-left  md:text-6xl text-[#EDEDED] my-4 flex flex-col">
             <span>First-class</span> <span>developer experience</span>
           </div>
@@ -193,8 +193,8 @@ export default function Home() {
             wished we had one that just works.
           </p>
         </div>
-        <div className="flex mt-6 flex-col md:flex-row">
-          <div className="flex flex-col mx-auto md:mx-0  md:w-full">
+        <div className="flex mt-6 flex-col lg:flex-row">
+          <div className="flex flex-col mx-auto md:mx-0  md:w-full md:mb-4 lg:mb-0">
             <TestCheck />
             <TestCard
               heading="Test Mode"
@@ -216,7 +216,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 ">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 p-8">
         <video
           autoPlay
           loop
@@ -243,12 +243,12 @@ export default function Home() {
         </div>
         <DocSection />
       </section>
-      <section className="flex-col lg:flex-row w-10/12 justify-start items-start my-20">
-        <div className="text-5xl text-left  md:text-6xl text-[#EDEDED] my-4 flex flex-col">
+      <section className="flex-col lg:flex-row w-10/12 justify-start items-start my-20 p-4">
+        <div className="text-5xl text-left lg:text-6xl text-[#EDEDED] my-4 flex flex-col">
           <span>Reach humans,</span>{" "}
           <span className="text-white/40">not spam folders</span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-1 lg:gap-3 mt-2">
           <TestCard
             heading="Test Mode"
             content="Simulate events and experiment with our API without the risk of accidentally sending real emails to real people."
@@ -305,7 +305,7 @@ export default function Home() {
           </TestCard>
         </div>
       </section>
-      <section className="py-10 flex-col max-w-7xl w-[90%] justify-center items-center my-20 bg-[rgb(1,0,14)] bg-[linear-gradient(292deg, rgba(1,0,14,1) 0%, rgba(3,13,22,1) 81%, rgba(3,16,24,1) 100%)]">
+      <section className="py-10 flex-col max-w-7xl w-[90%] p-8 justify-center items-center my-20 bg-[rgb(1,0,14)] bg-[linear-gradient(292deg, rgba(1,0,14,1) 0%, rgba(3,13,22,1) 81%, rgba(3,16,24,1) 100%)]">
         <div className="mx-auto w-[60px] h-[60px] rounded-full bg-[rgb(37,37,37)]  bg-[linear-gradient(126deg, rgba(1,0,14,1) 0%, rgba(58,58,58,1) 44%, rgba(0,0,1,1) 100%, rgba(3,16,24,1) 100%)] flex justify-center items-center">
           <Image src={vercel} width={30} height={30} alt="image"/>
         </div>
@@ -323,7 +323,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-24 ">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-24 p-8">
         <video
           autoPlay
           loop
@@ -344,7 +344,7 @@ export default function Home() {
 
         <ButtonGroup />
       </section>
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-24 overflow-hidden">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center overflow-hidden p-8">
         <h3 className="text-5xl text-center w-[60%] mx-auto text-[#EDEDED] my-6">
           Beyond expectations
         </h3>
@@ -355,7 +355,7 @@ export default function Home() {
 
         <Carousal />
       </section>
-      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-20 ">
+      <section className="flex-col-reverse lg:flex-row max-w-7xl items-center my-10 p-8">
         <h3 className="text-5xl w-[80%] mx-auto text-[#EDEDED] my-4 text-center">
           Email reimagined.      Available today.
         </h3>

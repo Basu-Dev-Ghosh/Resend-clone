@@ -5,37 +5,46 @@ import Slider from "react-slick";
 import CarousalCard from './CarousalCard';
 
 var settings = {
-  className:"my-20 w-[386px] md:w-full",
+  className:"my-20 w-[400px] md:w-[760px] lg:w-full",
   dots: true,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
+      speed: 5000,
+      arrows:false,
       pauseOnHover: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 10,
       cssEase: "linear",
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: false
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 820,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 550,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 1,
         infinite: true,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 400,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

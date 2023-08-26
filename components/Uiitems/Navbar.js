@@ -4,12 +4,12 @@ import MobileNav from "./MobileNav";
 import GetStartedButton from "./GetStartedButton";
 export default function Navbar() {
   return (
-    <nav className="pt-2 z-30 sticky top-0 border-b border-transparent md:backdrop-blur-sm bg-black md:bg-transparent transition duration-200 ease-in-out border-white/10  bg-black/50 md:backdrop-blur-md animate-header-slide-down-fade">
-      <div className="md:max-w-7xl mx-auto w-full max-w-5xl px-6 h-[58px] hidden md:flex justify-between items-center">
-        <Link href="/" className="lg:w-[180px] pt-10 lg:pt-0">
+    <nav className="pt-2 w-full z-30 sticky top-0 border-b border-transparent md:backdrop-blur-sm bg-black md:bg-transparent transition duration-200 ease-in-out border-white/10  bg-black/50 md:backdrop-blur-md animate-header-slide-down-fade">
+      <div className="md:max-w-ful lg:max-w-7xl mx-auto w-full px-6 h-[58px] hidden md:flex flex-row justify-between items-center">
+        <Link href="/" className="w-[100px] lg:w-[180px] pt-10 md:pt-0">
           <Logo />
         </Link>
-        <div className="flex items-center gap-8 text-[rgb(120,125,129)] mx-auto text-sm font-medium">
+        <div className="flex items-center md:gap-4 lg:gap-6 text-[rgb(120,125,129)] mx-auto text-sm font-bold">
           <Link
             href="/about"
             className="hover:text-slate-50 transition ease-in-out duration-150"
@@ -54,10 +54,10 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="gap-4 flex">
-          <button className="text-[rgb(120,125,129)]  hover:text-slate-50 transition ease-in-out duration-150 font-bold">
+          <button className="text-[rgb(120,125,129)]  hover:text-slate-50 transition ease-in-out duration-150 font-bold md:hidden lg:inline-block">
             Sign in
           </button>
-          <GetStartedButton className="ml-4 bg-white">
+          <GetStartedButton className="ml-4 bg-white w-fit">
             Get Started
           </GetStartedButton>
         </div>

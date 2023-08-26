@@ -8,14 +8,11 @@ module.exports = {
     './src/**/*.{js,jsx}',
 	],
   theme: {
-    container: {
-      center: true,
-      padding: "1rem",
-      screens: {
-        'sm': '1140px',
+    screens: {
+        'sm': '810px',
         // => @media (min-width: 640px) { ... }
   
-        'md': '1158px',
+        'md': '815px',
         // => @media (min-width: 768px) { ... }
   
         'lg': '1224px',
@@ -26,7 +23,11 @@ module.exports = {
   
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
-      }
+      },
+    container: {
+      center: true,
+      padding: "1rem",
+      
     },
     extend: {
       keyframes: {
