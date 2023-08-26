@@ -133,7 +133,7 @@ export default function DocSection() {
               desktop ? "px-8" : "px-20"
             }`}
           >
-            <Image src={circle} width={70} height={70} />
+            <Image src={circle} width={70} height={70} alt="circle"/>
             <p className="mt-3 text-lg font-semibold">
               {mailStrings[option].heading}
             </p>

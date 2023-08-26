@@ -1,10 +1,19 @@
-import Logo from "./Logo";
+"use client";
+
+import Logo from "@/components/Pages/Home__Page/Components/Logo";
 import Link from "next/link";
-import MobileNav from "./MobileNav";
-import GetStartedButton from "./GetStartedButton";
+import MobileNav from "@/components/Pages/Home__Page/Components/MobileNav";
+import GetStartedButton from "@/components/Pages/Home__Page/Components/GetStartedButton";
+import { motion } from "framer-motion";
 export default function Navbar() {
   return (
-    <nav className="pt-2 w-full z-30 sticky top-0 border-b border-transparent md:backdrop-blur-sm bg-black md:bg-transparent transition duration-200 ease-in-out border-white/10  bg-black/50 md:backdrop-blur-md animate-header-slide-down-fade">
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{opacity:1}}
+      transition={{ ease: [0.17, 0.67, 0.83, 0.67],duration: 0.8 }}
+      className="pt-2 w-full z-30 sticky top-0 border-b border-transparent md:backdrop-blur-sm bg-black md:bg-transparent transition duration-200 ease-in-out border-white/10  bg-black/50 md:backdrop-blur-md animate-header-slide-down-fade"
+    >
       <div className="md:max-w-ful lg:max-w-7xl mx-auto w-full px-6 h-[58px] hidden md:flex flex-row justify-between items-center">
         <Link href="/" className="w-[100px] lg:w-[180px] pt-10 md:pt-0">
           <Logo />
@@ -63,6 +72,6 @@ export default function Navbar() {
         </div>
       </div>
       <MobileNav />
-    </nav>
+    </motion.nav>
   );
 }
